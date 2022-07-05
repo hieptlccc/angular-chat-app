@@ -1,0 +1,138 @@
+/* The Modal (background) */
+.signup {
+  background-color: rgba(255, 255, 255, 0.8);
+  display: block; /* Hidden by default */
+  height: 100%; /* Full height */
+  left: 0;
+  /* overflow: auto; */
+  position: fixed; /* Stay in place */
+  top: 0;
+  width: 100%; /* Full width */
+  z-index: 1; /* Sit on top */
+}
+
+/* Modal Content/Box */
+.signup__content {
+  background-color: #fefefe;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+  margin: 0% auto; /* 15% from the top and centered */
+  /* margin-top: 10%; */
+  width: 27rem; /* Could be more or less, depending on screen size */
+}
+
+.signup__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.signup__title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: 1.25rem 0 0.5rem 1.25rem;
+}
+
+.signup__close {
+  align-items: center;
+  display: grid;
+  justify-items: right;
+  padding: 1.25rem 1.25rem 0.5rem 0;
+}
+
+.signup__close img:hover {
+  cursor: pointer;
+}
+
+.signup__subtitle {
+  background: #e5e7eb;
+  height: 1px;
+  margin-bottom: 0.5rem;
+  width: 100%;
+}
+
+.signup__form {
+  width: 100%;
+  padding: 1.25rem;
+}
+
+.signup__user-avatar {
+  padding-bottom: 0.5rem;
+  text-align: center;
+}
+
+.signup__about {
+  background-color: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  font-family: inherit;
+  font-size: 0.9375rem;
+  height: 3.5rem;
+  padding: 0.75rem;
+  width: 100%;
+}
+
+.signup__user-avatar img {
+  border-radius: 0.5rem;
+  height: 6rem;
+  object-fit: cover;
+  width: 6rem;
+}
+
+.signup__user-avatar img:hover {
+  cursor: pointer;
+}
+
+.signup__upload-container {
+  background-color: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  display: block;
+  font-size: 0.9375rem;
+  margin-bottom: 0.75rem;
+  padding: 0.875rem 1rem;
+  width: 100%;
+}
+
+.signup__upload-container:hover {
+  cursor: pointer;
+}
+
+.signup__upload-avatar {
+  display: none !important;
+}
+
+.signup__form input {
+  background-color: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  display: block;
+  font-size: 0.9375rem;
+  margin-bottom: 0.75rem;
+  padding: 0.875rem 1rem;
+  width: 100%;
+}
+
+.signup__form select {
+  background-color: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  display: block;
+  font-size: 0.9375rem;
+  height: 2.625rem;
+  margin-bottom: 0.75rem;
+  outline: none;
+  padding: 0 1rem;
+  width: 100%;
+}
+
+.signup__btn {
+  background-color: #0b65c2;
+  border: 0;
+  color: #fff;
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 1.25rem auto;
+  outline: none;
+  padding: 0.875rem 1rem;
+}
+
+.signup__btn:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}

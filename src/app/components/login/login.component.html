@@ -1,0 +1,22 @@
+<div class="login__container">
+  <div class="login__welcome">
+    <p style="font-weight: bold; color: #2c3e50">
+      Build <span style="color: #0b65c2">Chat App</span> with Angular
+    </p>
+  </div>
+  <div class="login__form-container">
+    <div class="login__form">
+      <input type="text" placeholder="Email or phone number" #emailRef />
+      <input type="password" placeholder="Password" #passwordRef />
+      <button class="login__submit-btn" (click)="login()">Login</button>
+      <span class="login__forgot-password">Forgot password?</span>
+      <span class="login__signup" (click)="toggleSignUpModal(true)">
+        Create New Account
+      </span>
+    </div>
+  </div>
+  <app-signup
+    *ngIf="isSignUpShown"
+    (toggleSignUpModal)="toggleSignUpModal($event)"
+  ></app-signup>
+</div>

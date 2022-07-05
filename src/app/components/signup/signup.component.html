@@ -1,0 +1,48 @@
+<div class="signup">
+  <div class="signup__content">
+    <div class="signup__container">
+      <div class="signup__title">Sign Up</div>
+      <div class="signup__close">
+        <img
+          alt="close"
+          src="https://static.xx.fbcdn.net/rsrc.php/v3/y2/r/__geKiQnSG-.png"
+          (click)="closeSignUpModal()"
+        />
+      </div>
+    </div>
+    <div class="signup__subtitle"></div>
+    <div class="signup__form">
+      <div class="signup__user-avatar" *ngIf="avatar">
+        <img src="{{ avatar }}" alt="avatar" (click)="chooseAvatar()" />
+      </div>
+      <div
+        class="signup__upload-container"
+        (click)="chooseAvatar()"
+        *ngIf="!avatar"
+      >
+        Choose File
+      </div>
+      <input
+        class="signup__upload-avatar"
+        hidden
+        (change)="uploadAvatar($event)"
+        #filepickerRef
+        type="file"
+      />
+      <input type="text" placeholder="Fullname" #fullnameRef />
+      <input type="text" placeholder="Email" #emailRef />
+      <input type="password" placeholder="Password" #passwordRef />
+      <input
+        type="password"
+        placeholder="Confirm Password"
+        #confirmPasswordRef
+      />
+      <textarea
+        class="signup__about"
+        placeholder="Describe yourself here..."
+        #aboutRef
+      ></textarea>
+      <button class="signup__btn" (click)="signup()">Sign Up</button>
+    </div>
+  </div>
+</div>

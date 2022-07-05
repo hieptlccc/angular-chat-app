@@ -1,0 +1,40 @@
+.header {
+  align-items: center;
+  background: #0b65c2;
+  display: grid;
+  font-size: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  height: 3.5rem;
+  width: 100%;
+}
+
+.header__left {
+  align-items: center;
+  color: #fff;
+  display: flex;
+  font-weight: bold;
+  gap: 0.5rem;
+  padding-left: 1rem;
+}
+
+.header__left img {
+  border-radius: 50%;
+  height: 2rem;
+  object-fit: cover;
+  width: 2rem;
+}
+
+.header__right {
+  display: flex;
+  justify-content: right;
+}
+
+.header__logout {
+  color: #fff;
+  font-weight: bold;
+  padding-right: 1rem;
+}
+
+.header__logout:hover {
+  cursor: pointer;
+}
